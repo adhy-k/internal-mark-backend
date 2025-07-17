@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-mongoose.connect("mongodb+srv://adhy:kannan123@cluster0.v6yc0yl.mongodb.net/internalMarkDb?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("")
 
 app.post("/calculate", (request, response) => {
     const name = (request.body.name)
